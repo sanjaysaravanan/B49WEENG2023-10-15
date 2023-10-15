@@ -1,0 +1,69 @@
+
+Topics:
+
+  1. Navigate: react-router-dom
+    navigates to the specified route
+
+  2. Props Drilling:
+      passing props from parent to children
+      Drilling of a particular or group of props to two or more level of components
+
+      Lot of re-renders at different levels
+
+  3. Props Drilling:
+
+      Drilling of props from Parent --> Child --> GrandChild
+
+      In Genereal, separate the props or state specific to the level( Component child/parent )
+        Where You keep the ren-rendering controlled at particular level rather than rendering whole application
+
+  4. useContext used to avoid props drilling but not the re-rendering
+
+      context --> a base context for the entire application 
+        or at particular component level
+
+        hooks
+          1. Create Context 
+          2. useContext 
+      
+      Eg: theme --> light / dark theme for the entire application
+          language --> language for the entire application
+        
+        Programming Language Selection on coding platform
+      
+      Provider: Provides the Context to the entire component tree
+      Consume: useContext
+
+      Advantage:
+        Properties or state context on a grandparent component
+        can be used by a grandchild with using a middle parent
+      
+      Disadvantage:
+        Does not avoid the re-rendering of the child components
+
+  5. Working with Forms & basic data processing in reactjs
+    Please refer src/Profile.jsx for form handling using useState
+
+Next Week:
+  I will ask for Additional session where we will try to see,
+    Some simple games.
+  
+  About how to put the layout of an application together
+  6. ref in react
+
+      useRef() --> hook used to access the DOM element
+
+      ref.current === e.target
+
+      ref cannot be used to change/alter the DOM it should be used only for actions on the application,
+
+      1. Scrolling
+      2. Sliding
+      3. Play an audio
+      4. Stop an audio
+
+      ** Ref should not be used to alter the DOM, it should only be used to do actions like above **
+  
+  7. useReducer
+
+  
