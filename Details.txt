@@ -3,10 +3,12 @@ Topics:
 
   1. Navigate: react-router-dom
     navigates to the specified route
+    1. Navigate as component
+    2. useNavigate hook as a function call
 
   2. Props Drilling:
       passing props from parent to children
-      Drilling of a particular or group of props to two or more level of components
+      Drilling of a particular or group of props to two or more levels of components
 
       Lot of re-renders at different levels
 
